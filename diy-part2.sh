@@ -9,6 +9,13 @@
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
 #
+#!/bin/bash
+# 克隆 luci-app-dae
+git clone --depth=1 https://github.com/QiuSimons/luci-app-dae.git package/luci-app-dae
+
+# 克隆 luci-app-honk 及相关依赖组件
+git clone --depth=1 https://github.com/QiuSimons/OpenWrt-Add.git package/OpenWrt-Add
+
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
