@@ -28,3 +28,6 @@ git clone --depth=1 https://github.com/QiuSimons/OpenWrt-Add.git package/OpenWrt
 
 
 echo -e "\nCONFIG_DEVEL=y\nCONFIG_CCACHE=y" >> .config
+
+mkdir -p /workdir/openwrt/staging_dir/host/bin
+ln -sf $(which ccache) /workdir/openwrt/staging_dir/host/bin/ccache
