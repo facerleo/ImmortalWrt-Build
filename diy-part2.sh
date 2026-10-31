@@ -25,3 +25,6 @@ git clone --depth=1 https://github.com/QiuSimons/OpenWrt-Add.git package/OpenWrt
 
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
+
+
+echo -e "\nCONFIG_DEVEL=y\nCONFIG_CCACHE=y" >> .config
