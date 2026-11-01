@@ -10,8 +10,7 @@
 # See /LICENSE for more information.
 #
 #!/bin/bash
-# 克隆 luci-app-dae
-git clone --depth=1 https://github.com/QiuSimons/luci-app-dae.git package/luci-app-dae
+
 
 # 克隆 luci-app-honk 及相关依赖组件
 git clone --depth=1 https://github.com/QiuSimons/OpenWrt-Add.git package/OpenWrt-Add
